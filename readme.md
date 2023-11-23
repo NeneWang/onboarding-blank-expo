@@ -175,7 +175,12 @@ yarn add lottie-react-native
 
 ```
 
+```
+npm i @react-native-async-storage/async-storage
 
+yarn add @react-native-async-storage/async-storage
+
+```
 
 
 

@@ -1,11 +1,12 @@
-// AppNavigator.js
-import React from 'react';
+import React, { useEffect, useState } from 'react'
 import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-import HomeScreen from '../screens/HomeScreen';
-import OnboardingScreen from '../screens/OnboardingScreen';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import HomeScreen from '../screens/HomeScreen.js';
+import OnboardingScreen from '../screens/OnboardingScreen.js';
+import { getItem } from '../utils/asyncStorage.js';
 
-const Stack = createStackNavigator();
+
+const Stack = createNativeStackNavigator();
 
 const AppNavigator = () => {
     return (
