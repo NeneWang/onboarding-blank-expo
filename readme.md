@@ -165,3 +165,20 @@ const styles = StyleSheet.create({
 
 export default OnboardingScreen
 ```
+
+
+### Adding Lottie.
+
+
+```js
+yarn add lottie-react-native
+
+```
+
+
+
+
+
+
+
+
