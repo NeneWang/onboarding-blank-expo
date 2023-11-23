@@ -4,6 +4,7 @@ import Onboarding from 'react-native-onboarding-swiper';
 import Lottie from 'lottie-react-native';
 import { useNavigation } from '@react-navigation/native';
 import { setItem } from '../utils/asyncStorage';
+import LottieView from 'lottie-react-native';
 
 const { width, height } = Dimensions.get('window');
 
@@ -22,13 +23,23 @@ export default function OnboardingScreen() {
             </TouchableOpacity>
         )
 
+
+
     }
+
+
+    // useEffect(() => {
+    //     if (LottieRef.current !== null) {
+    //         LottieRef.current.play(); // it doesn't work
+    //     }
+    // }, [LottieRef])
+
     return (
         <View style={styles.container}>
             <Onboarding
                 onDone={handleDone}
                 onSkip={handleDone}
-                
+
                 DoneButtonComponent={doneButton}
                 containerStyles={{ paddingHorizontal: 15 }}
                 pages={[
@@ -36,7 +47,7 @@ export default function OnboardingScreen() {
                         backgroundColor: '#a7f3d0',
                         image: (
                             <View style={styles.lottie}>
-                                <Lottie
+                                <LottieView
                                     style={{ flex: 1 }}
                                     source={require('../assets/animations/boost.json')} autoPlay loop />
                             </View>
