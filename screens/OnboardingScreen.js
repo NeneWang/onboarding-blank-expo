@@ -28,7 +28,7 @@ export default function OnboardingScreen() {
             <Onboarding
                 onDone={handleDone}
                 onSkip={handleDone}
-                // bottomBarHighlight={false}
+                
                 DoneButtonComponent={doneButton}
                 containerStyles={{ paddingHorizontal: 15 }}
                 pages={[
@@ -57,7 +57,7 @@ export default function OnboardingScreen() {
                         subtitle: 'Get your work done seamlessly without interruption',
                     },
                     {
-                        backgroundColor: '#a78bfa',
+                        backgroundColor: '#fff',
                         image: (
                             <View style={styles.lottie}>
                                 <Lottie
