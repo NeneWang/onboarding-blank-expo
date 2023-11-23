@@ -7,6 +7,20 @@ For my youtube tutorial.
 Install Packages
 yarn global add expo-cli
 
+
+
+Version to make this work.
+```
+
+"lottie-react-native": "^5.1.4",
+```
+
+Otherwsie review the documentation to amke it work:
+
+https://github.com/lottie-react-native/lottie-react-native
+
+
+
 ```
 
 expo init onboarding-blank-expo
